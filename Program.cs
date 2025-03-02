@@ -21,11 +21,6 @@ namespace never
         [STAThread]
         static void Main()
         {
-            Console.WriteLine("\n [+] Welcome to Sch Bypass");
-            Thread.Sleep(3000);
-            FreeConsole();
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
         }
     }

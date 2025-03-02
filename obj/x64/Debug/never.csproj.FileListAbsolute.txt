@@ -39,8 +39,8 @@ C:\Users\Quintin\Downloads\Byp\Byp\obj\x64\Debug\never.Forms.Main.resources
 C:\Users\Quintin\Downloads\Byp\Byp\obj\x64\Debug\svchost.Properties.Resources.resources
 C:\Users\Quintin\Downloads\Byp\Byp\obj\x64\Debug\never.csproj.GenerateResource.cache
 C:\Users\Quintin\Downloads\Byp\Byp\obj\x64\Debug\never.csproj.CoreCompileInputs.cache
-C:\Users\Quintin\Downloads\Byp\Byp\obj\x64\Debug\never.csproj.Fody.CopyLocal.cache
-C:\Users\Quintin\Downloads\Byp\Byp\obj\x64\Debug\never.csproj.Fody.RuntimeCopyLocal.cache
 C:\Users\Quintin\Downloads\Byp\Byp\obj\x64\Debug\never.csproj.Up2Date
 C:\Users\Quintin\Downloads\Byp\Byp\obj\x64\Debug\svchost.exe
 C:\Users\Quintin\Downloads\Byp\Byp\obj\x64\Debug\svchost.pdb
+C:\Users\Quintin\Downloads\Byp\Byp\obj\x64\Debug\never.csproj.Fody.CopyLocal.cache
+C:\Users\Quintin\Downloads\Byp\Byp\obj\x64\Debug\never.csproj.Fody.RuntimeCopyLocal.cache
