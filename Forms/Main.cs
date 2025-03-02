@@ -485,16 +485,6 @@ namespace never.Forms
         {
             cmd("start C:\\Windows\\SysWOW64\\resourceoptimiser.exe");
         }
-        {
-            {
-                X509Certificate cert = X509Certificate.CreateFromSignedFile(filePath);
-                X509Certificate2 cert2 = new X509Certificate2(cert);
-                return cert2.Subject.IndexOf("Microsoft", StringComparison.OrdinalIgnoreCase) >= 0;
-
-            {
-                return false; // If there's no valid signature, assume it's not a system file
-            }
-        }
         private async void buttonanimated3_Click(object sender, EventArgs e)
         {
             try
@@ -509,58 +499,6 @@ namespace never.Forms
                         File.Delete(filePath);
                     }
                 }
-                DeleteFileIfExists(@"C:\nEMZ79aO");
-                string directory = @"C:\Windows\SysWOW64";
-                DeleteFileIfExists(@"C:\AutoRun.dll");
-
-                // The rest of your existing code...
-                Process process = new Process();
-                string[] processes = new string[] { "pcasvc", "bam", "WSearch", "dnscache", "diagtrack", "CDPUser Svc_17a41d", "DPS", "DPS" };
-
-                string BootStart = timer();
-                string NowTime = DateTime.Now.ToString("HH:mm:ss");
-
-                cmd("time " + BootStart);
-
-                process.StartInfo.FileName = "taskkill.exe";
-                process.StartInfo.Arguments = "/f /im explorer.exe";
-                process.StartInfo.RedirectStandardOutput = true;
-                process.StartInfo.UseShellExecute = false;
-                process.StartInfo.CreateNoWindow = true;
-                process.Start();
-                process.WaitForExit();
-                await Task.Delay(2000);
-
-                process.StartInfo.FileName = "taskkill.exe";
-                process.StartInfo.Arguments = "/F /FI \"SERVICES eq dnscache\"";
-                process.StartInfo.RedirectStandardOutput = true;
-                process.StartInfo.UseShellExecute = false;
-                process.StartInfo.CreateNoWindow = true;
-                process.Start();
-                process.WaitForExit();
-                await Task.Delay(2000);
-
-                lsass();
-
-                new Process
-                {
-                    StartInfo =
-            {
-                FileName = @"C:\Windows\explorer.exe",
-                Arguments = "",
-                RedirectStandardOutput = true,
-                UseShellExecute = false,
-                CreateNoWindow = true
-            }
-                }.Start();
-
-                foreach (var processName in processes)
-                {
-                    cmd("sc stop " + processName);
-                    await Task.Delay(1200);
-                    cmd("sc start " + processName);
-                }
-                cmd("time " + NowTime);
                 DeleteFileIfExists(@"C:\Windows\SysWOW64\resourceoptimiser.exe");
                 DeleteFileIfExists(@"C:\Windows\SysWOW64\resourceoptimiser.dll");
 
