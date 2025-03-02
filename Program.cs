@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KeyAuth;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -10,6 +11,7 @@ namespace never
 {
     internal static class Program
     {
+
         [DllImport("kernel32.dll")]
         private static extern bool AllocConsole();
 
@@ -19,9 +21,14 @@ namespace never
         /// Ponto de entrada principal para o aplicativo.
         /// </summary>
         [STAThread]
+
         static void Main()
         {
+
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
+
         }
     }
 }

@@ -34,5 +34,13 @@ C:\Users\Quintin\Downloads\Byp\Byp\obj\x64\Release\never.csproj.CoreCompileInput
 C:\Users\Quintin\Downloads\Byp\Byp\obj\x64\Release\never.csproj.Up2Date
 C:\Users\Quintin\Downloads\Byp\Byp\obj\x64\Release\svchost.exe
 C:\Users\Quintin\Downloads\Byp\Byp\obj\x64\Release\svchost.pdb
-C:\Users\Quintin\Downloads\Byp\Byp\obj\x64\Release\never.csproj.Fody.CopyLocal.cache
-C:\Users\Quintin\Downloads\Byp\Byp\obj\x64\Release\never.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\Quintin\Downloads\Byp\Byp\bin\x64\Release\Costura.dll
+C:\Users\Quintin\Downloads\Byp\Byp\bin\x64\Release\MemorySharp.dll
+C:\Users\Quintin\Downloads\Byp\Byp\bin\x64\Release\Siticone.Desktop.UI.dll
+C:\Users\Quintin\Downloads\Byp\Byp\bin\x64\Release\System.CodeDom.dll
+C:\Users\Quintin\Downloads\Byp\Byp\bin\x64\Release\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Quintin\Downloads\Byp\Byp\bin\x64\Release\System.Diagnostics.EventLog.dll
+C:\Users\Quintin\Downloads\Byp\Byp\bin\x64\Release\System.Security.Principal.Windows.dll
+C:\Users\Quintin\Downloads\Byp\Byp\bin\x64\Release\System.ServiceProcess.ServiceController.dll
+C:\Users\Quintin\Downloads\Byp\Byp\bin\x64\Release\Costura.pdb
+C:\Users\Quintin\Downloads\Byp\Byp\bin\x64\Release\Costura.xml
