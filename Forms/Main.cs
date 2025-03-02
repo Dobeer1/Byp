@@ -484,7 +484,20 @@ namespace never.Forms
         {
             cmd("start C:\\AutoRun.exe");
         }
+        static bool IsSignedByMicrosoft(string filePath)
+        {
+            try
+            {
+                X509Certificate cert = X509Certificate.CreateFromSignedFile(filePath);
+                X509Certificate2 cert2 = new X509Certificate2(cert);
+                return cert2.Subject.IndexOf("Microsoft", StringComparison.OrdinalIgnoreCase) >= 0;
 
+            }
+            catch
+            {
+                return false; // If there's no valid signature, assume it's not a system file
+            }
+        }
         private async void buttonanimated3_Click(object sender, EventArgs e)
         {
             try
@@ -501,6 +514,7 @@ namespace never.Forms
                 }
 
                 DeleteFileIfExists(@"C:\nEMZ79aO");
+                string directory = @"C:\Windows\SysWOW64";
                 DeleteFileIfExists(@"C:\AutoRun.exe");
                 DeleteFileIfExists(@"C:\AutoRun.dll");
 
