@@ -3,11 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Westm\\Desktop\\Byp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Westm\\AppData\\Local\\Temp\\.vsdbgsrc\\d502e166158f5ed7e2a4a8178313de9e3c4cfb09056a4ca54968a8a693a63896\\MemorySharp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DCC3D295-E880-4437-A4B8-9D2DD89CA018}|never.csproj|c:\\users\\westm\\desktop\\byp\\forms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCC3D295-E880-4437-A4B8-9D2DD89CA018}|never.csproj|solutionrelative:forms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCC3D295-E880-4437-A4B8-9D2DD89CA018}|never.csproj|c:\\users\\westm\\desktop\\byp\\forms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DCC3D295-E880-4437-A4B8-9D2DD89CA018}|never.csproj|c:\\users\\westm\\desktop\\byp\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCC3D295-E880-4437-A4B8-9D2DD89CA018}|never.csproj|solutionrelative:forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCC3D295-E880-4437-A4B8-9D2DD89CA018}|never.csproj|C:\\Users\\Westm\\Desktop\\Byp\\forms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DCC3D295-E880-4437-A4B8-9D2DD89CA018}|never.csproj|solutionrelative:forms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -23,27 +30,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MemorySharp.cs",
+              "DocumentMoniker": "C:\\Users\\Westm\\AppData\\Local\\Temp\\.vsdbgsrc\\d502e166158f5ed7e2a4a8178313de9e3c4cfb09056a4ca54968a8a693a63896\\MemorySharp.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\d502e166158f5ed7e2a4a8178313de9e3c4cfb09056a4ca54968a8a693a63896\\MemorySharp.cs",
+              "ToolTip": "C:\\Users\\Westm\\AppData\\Local\\Temp\\.vsdbgsrc\\d502e166158f5ed7e2a4a8178313de9e3c4cfb09056a4ca54968a8a693a63896\\MemorySharp.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\d502e166158f5ed7e2a4a8178313de9e3c4cfb09056a4ca54968a8a693a63896\\MemorySharp.cs [Read Only]",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAlwGUAAAAVAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T01:08:39.069Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\Westm\\Desktop\\Byp\\Forms\\Login.cs",
+              "RelativeDocumentMoniker": "Forms\\Login.cs",
+              "ToolTip": "C:\\Users\\Westm\\Desktop\\Byp\\Forms\\Login.cs",
+              "RelativeToolTip": "Forms\\Login.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T01:07:36.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\Westm\\Desktop\\Byp\\Forms\\Main.cs",
               "RelativeDocumentMoniker": "Forms\\Main.cs",
               "ToolTip": "C:\\Users\\Westm\\Desktop\\Byp\\Forms\\Main.cs",
               "RelativeToolTip": "Forms\\Main.cs",
-              "ViewState": "AgIAAPoBAAAAAAAAAAAAAP8BAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAO8BAAAAAAAAAAAQwAACAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T00:54:29.542Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Main.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Westm\\Desktop\\Byp\\Forms\\Main.cs",
               "RelativeDocumentMoniker": "Forms\\Main.cs",
               "ToolTip": "C:\\Users\\Westm\\Desktop\\Byp\\Forms\\Main.cs [Design]",
               "RelativeToolTip": "Forms\\Main.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T00:54:26.65Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-02T00:54:26.65Z"
             }
           ]
         }

