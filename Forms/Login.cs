@@ -20,7 +20,6 @@ namespace never
         private void buttonanimated1_Click(object sender, EventArgs e)
         {
 
-            Console.WriteLine(" Connecting...");
             KeyAuthApp.init();
 
             string key = usernameTextBox.Text; // Assuming you have a TextBox named licenseTextBox
@@ -36,7 +35,6 @@ namespace never
             else
             {
                 // License is invalid, show the error message
-                MessageBox.Show("Status: " + KeyAuthApp.response.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Application.Exit(); // Close the application
             }
         }

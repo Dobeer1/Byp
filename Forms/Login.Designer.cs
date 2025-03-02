@@ -69,7 +69,7 @@ namespace never
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = Color.White;
-            this.label2.Location = new System.Drawing.Point(200, 13);
+            this.label2.Location = new System.Drawing.Point(200, 10);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 30);
             this.label2.TabIndex = 0;

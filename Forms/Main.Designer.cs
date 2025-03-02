@@ -40,14 +40,14 @@
             this.Slide1 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
             this.AnimationTimer = new System.Windows.Forms.Timer(this.components);
             this.skriptp = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.tzxp = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.PID = new System.Windows.Forms.Label();
+            this.buttonanimated4 = new never.Class.buttonanimated();
+            this.buttonanimated5 = new never.Class.buttonanimated();
             this.buttonanimated3 = new never.Class.buttonanimated();
             this.buttonanimated2 = new never.Class.buttonanimated();
             this.buttonanimated1 = new never.Class.buttonanimated();
-            this.tzxp = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.buttonanimated4 = new never.Class.buttonanimated();
-            this.buttonanimated5 = new never.Class.buttonanimated();
             this.buttonanimated6 = new never.Class.buttonanimated();
-            this.PID = new System.Windows.Forms.Label();
             this.siticonePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Slide1)).BeginInit();
             this.skriptp.SuspendLayout();
@@ -82,7 +82,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(98)))), ((int)(((byte)(97)))));
             this.label2.Location = new System.Drawing.Point(222, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 20);
+            this.label2.Size = new System.Drawing.Size(74, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "BYPASS";
             // 
@@ -208,6 +208,75 @@
             this.skriptp.Size = new System.Drawing.Size(398, 250);
             this.skriptp.TabIndex = 5;
             // 
+            // tzxp
+            // 
+            this.tzxp.Controls.Add(this.buttonanimated4);
+            this.tzxp.Controls.Add(this.buttonanimated5);
+            this.tzxp.Controls.Add(this.buttonanimated6);
+            this.tzxp.Location = new System.Drawing.Point(43, 126);
+            this.tzxp.Name = "tzxp";
+            this.tzxp.Size = new System.Drawing.Size(398, 250);
+            this.tzxp.TabIndex = 7;
+            // 
+            // PID
+            // 
+            this.PID.AutoSize = true;
+            this.PID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.PID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(98)))), ((int)(((byte)(97)))));
+            this.PID.Location = new System.Drawing.Point(221, 520);
+            this.PID.Name = "PID";
+            this.PID.Size = new System.Drawing.Size(36, 20);
+            this.PID.TabIndex = 8;
+            this.PID.Text = "PID";
+            // 
+            // buttonanimated4
+            // 
+            this.buttonanimated4.AnimationInterval = 3;
+            this.buttonanimated4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.buttonanimated4.BackgroundSpeed = 25;
+            this.buttonanimated4.BackHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.buttonanimated4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.buttonanimated4.BorderRadius = 5;
+            this.buttonanimated4.BorderSize = 1;
+            this.buttonanimated4.CustomButtonText = "Destruct TZX";
+            this.buttonanimated4.FlatAppearance.BorderSize = 0;
+            this.buttonanimated4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonanimated4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.buttonanimated4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(98)))), ((int)(((byte)(97)))));
+            this.buttonanimated4.Location = new System.Drawing.Point(207, 105);
+            this.buttonanimated4.Name = "buttonanimated4";
+            this.buttonanimated4.Size = new System.Drawing.Size(163, 42);
+            this.buttonanimated4.SmoothCorrectionFactor = 3D;
+            this.buttonanimated4.TabIndex = 6;
+            this.buttonanimated4.TextHoverColor = System.Drawing.Color.Black;
+            this.buttonanimated4.UseSmoothSpeedIncrement = true;
+            this.buttonanimated4.UseVisualStyleBackColor = false;
+            this.buttonanimated4.Click += new System.EventHandler(this.buttonanimated4_Click);
+            // 
+            // buttonanimated5
+            // 
+            this.buttonanimated5.AnimationInterval = 3;
+            this.buttonanimated5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.buttonanimated5.BackgroundSpeed = 25;
+            this.buttonanimated5.BackHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.buttonanimated5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.buttonanimated5.BorderRadius = 5;
+            this.buttonanimated5.BorderSize = 1;
+            this.buttonanimated5.CustomButtonText = "Load TZX";
+            this.buttonanimated5.FlatAppearance.BorderSize = 0;
+            this.buttonanimated5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonanimated5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.buttonanimated5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(98)))), ((int)(((byte)(97)))));
+            this.buttonanimated5.Location = new System.Drawing.Point(19, 105);
+            this.buttonanimated5.Name = "buttonanimated5";
+            this.buttonanimated5.Size = new System.Drawing.Size(163, 42);
+            this.buttonanimated5.SmoothCorrectionFactor = 3D;
+            this.buttonanimated5.TabIndex = 5;
+            this.buttonanimated5.TextHoverColor = System.Drawing.Color.Black;
+            this.buttonanimated5.UseSmoothSpeedIncrement = true;
+            this.buttonanimated5.UseVisualStyleBackColor = false;
+            this.buttonanimated5.Click += new System.EventHandler(this.buttonanimated5_Click);
+            // 
             // buttonanimated3
             // 
             this.buttonanimated3.AnimationInterval = 3;
@@ -280,98 +349,26 @@
             this.buttonanimated1.UseVisualStyleBackColor = false;
             this.buttonanimated1.Click += new System.EventHandler(this.buttonanimated1_Click);
             // 
-            // gosthp
-            // 
-            this.tzxp.Controls.Add(this.buttonanimated4);
-            this.tzxp.Controls.Add(this.buttonanimated5);
-            this.tzxp.Controls.Add(this.buttonanimated6);
-            this.tzxp.Location = new System.Drawing.Point(43, 126);
-            this.tzxp.Name = "gosthp";
-            this.tzxp.Size = new System.Drawing.Size(398, 250);
-            this.tzxp.TabIndex = 7;
-            // 
-            // buttonanimated4
-            // 
-            this.buttonanimated4.AnimationInterval = 3;
-            this.buttonanimated4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.buttonanimated4.BackgroundSpeed = 25;
-            this.buttonanimated4.BackHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.buttonanimated4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.buttonanimated4.BorderRadius = 5;
-            this.buttonanimated4.BorderSize = 1;
-            this.buttonanimated4.CustomButtonText = "Destruct TZX";
-            this.buttonanimated4.FlatAppearance.BorderSize = 0;
-            this.buttonanimated4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonanimated4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.buttonanimated4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(98)))), ((int)(((byte)(97)))));
-            this.buttonanimated4.Location = new System.Drawing.Point(207, 105);
-            this.buttonanimated4.Name = "buttonanimated4";
-            this.buttonanimated4.Size = new System.Drawing.Size(163, 42);
-            this.buttonanimated4.SmoothCorrectionFactor = 3D;
-            this.buttonanimated4.TabIndex = 6;
-            this.buttonanimated4.TextHoverColor = System.Drawing.Color.Black;
-            this.buttonanimated4.UseSmoothSpeedIncrement = true;
-            this.buttonanimated4.UseVisualStyleBackColor = false;
-            this.buttonanimated4.Click += new System.EventHandler(this.buttonanimated4_Click);
-            // 
-            // buttonanimated5
-            // 
-            this.buttonanimated5.AnimationInterval = 3;
-            this.buttonanimated5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.buttonanimated5.BackgroundSpeed = 25;
-            this.buttonanimated5.BackHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.buttonanimated5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.buttonanimated5.BorderRadius = 5;
-            this.buttonanimated5.BorderSize = 1;
-            this.buttonanimated5.CustomButtonText = "Load TZX";
-            this.buttonanimated5.FlatAppearance.BorderSize = 0;
-            this.buttonanimated5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonanimated5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.buttonanimated5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(98)))), ((int)(((byte)(97)))));
-            this.buttonanimated5.Location = new System.Drawing.Point(19, 105);
-            this.buttonanimated5.Name = "buttonanimated5";
-            this.buttonanimated5.Size = new System.Drawing.Size(163, 42);
-            this.buttonanimated5.SmoothCorrectionFactor = 3D;
-            this.buttonanimated5.TabIndex = 5;
-            this.buttonanimated5.TextHoverColor = System.Drawing.Color.Black;
-            this.buttonanimated5.UseSmoothSpeedIncrement = true;
-            this.buttonanimated5.UseVisualStyleBackColor = false;
-            this.buttonanimated5.Click += new System.EventHandler(this.buttonanimated5_Click);
-            // 
             // buttonanimated6
             // 
             this.buttonanimated6.AnimationInterval = 3;
             this.buttonanimated6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.buttonanimated6.BackgroundSpeed = 25;
-            this.buttonanimated6.BackHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.buttonanimated6.BackHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(147)))), ((int)(((byte)(255)))));
             this.buttonanimated6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
             this.buttonanimated6.BorderRadius = 5;
             this.buttonanimated6.BorderSize = 1;
-            this.buttonanimated6.CustomButtonText = "Download TZX";
-            this.buttonanimated6.FlatAppearance.BorderSize = 0;
+            this.buttonanimated6.CustomButtonText = "Authorization";
             this.buttonanimated6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonanimated6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.buttonanimated6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(98)))), ((int)(((byte)(97)))));
-            this.buttonanimated6.Location = new System.Drawing.Point(118, 39);
+            this.buttonanimated6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(174)))), ((int)(((byte)(175)))));
+            this.buttonanimated6.Location = new System.Drawing.Point(0, 0);
             this.buttonanimated6.Name = "buttonanimated6";
-            this.buttonanimated6.Size = new System.Drawing.Size(163, 42);
+            this.buttonanimated6.Size = new System.Drawing.Size(75, 23);
             this.buttonanimated6.SmoothCorrectionFactor = 3D;
-            this.buttonanimated6.TabIndex = 4;
+            this.buttonanimated6.TabIndex = 7;
             this.buttonanimated6.TextHoverColor = System.Drawing.Color.Black;
             this.buttonanimated6.UseSmoothSpeedIncrement = true;
             this.buttonanimated6.UseVisualStyleBackColor = false;
-            this.buttonanimated6.Click += new System.EventHandler(this.buttonanimated6_Click);
-            // 
-            // PID
-            // 
-            this.PID.AutoSize = true;
-            this.PID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.PID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(98)))), ((int)(((byte)(97)))));
-            this.PID.Location = new System.Drawing.Point(221, 520);
-            this.PID.Name = "PID";
-            this.PID.Size = new System.Drawing.Size(36, 20);
-            this.PID.TabIndex = 8;
-            this.PID.Text = "PID";
             // 
             // Main
             // 
@@ -418,7 +415,7 @@
         private Siticone.Desktop.UI.WinForms.SiticonePanel tzxp;
         private Class.buttonanimated buttonanimated4;
         private Class.buttonanimated buttonanimated5;
-        private Class.buttonanimated buttonanimated6;
         private System.Windows.Forms.Label PID;
+        private Class.buttonanimated buttonanimated6;
     }
 }
